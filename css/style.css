@@ -1,0 +1,206 @@
+/* Start Global Css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: DejaVu Sans;
+    src: url(../fonts/DejaVuSans.ttf);
+}
+
+body {
+    font-family: DejaVa Sans;
+}
+
+:root {
+    --main-color: #59c6bc;
+    --second-color: #fff568;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End Global Css */
+
+/* Start Header Css */
+header {
+    background-image: url(../images/Layer\ 8.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 725px;
+}
+
+/* Start Header Nav Css */
+header #cust-nav {
+    background-color: var(--main-color) !important;
+}
+
+header nav .container #navbarSupportedContent ul li.nav-item>a {
+    color: #fff;
+}
+
+header #cust-nav .container #cust-brand {
+    position: relative;
+    color: #ffffff;
+    font-weight: 900;
+    margin-right: 0;
+}
+
+header #cust-nav .container #cust-brand span {
+    position: absolute;
+    top: 36px;
+    left: 43px;
+    color: #000;
+    font-weight: 300 !important;
+}
+
+header #cust-nav .container #cust-brand img {
+    margin-left: 6px;
+}
+
+header nav .container #navbarSupportedContent ul li a.nav-link.active {
+    background-color: var(--second-color);
+    border-radius: 25px;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    color: #000;
+}
+
+/* End Header Nav Css */
+header div.container div.row div.col-lg-5 h1 {
+    font-size: 51px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 110px;
+}
+
+header div.container div.row div.col-lg-5 p {
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+header div.container div.row div.col-lg-5>a {
+    padding: 10px 50px;
+    background-color: var(--second-color);
+    border-radius: 25px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #505050;
+    font-weight: 500;
+}
+
+/* End Header Css */
+
+/* Media Q for Header */
+@media screen and (max-width: 320px) {
+    header .container .row .col-lg-5 h1{
+        font-size: 48px !important;
+    }
+    header .container .row .col-lg-5 p {
+        font-size: 22px !important;
+    }
+}
+@media screen and (max-width:480px) {}
+@media screen and (max-width:600px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:900px) {}
+@media screen and (max-width:1024px) {}
+@media screen and (max-width:1200px) {}
+
+/* Start Main Section Css */
+section.main_sec>div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main_sec div.container div {
+    width: calc((100% / 4) - 20px);
+    padding: 30px;
+    color: #ffffff;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    transition: 0.35s ease-out;
+}
+
+section.main_sec div.container div:hover {
+    transform: translateY(-2.2px);
+}
+
+section.main_sec div.container div:first-child {
+    margin-right: 10px;
+}
+
+section.main_sec div.container div:last-child {
+    margin-left: 10px;
+}
+
+section.main_sec div.container div h4 {
+    margin: 25px 0px;
+}
+
+section.main_sec div.container div img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+section.main_sec div.container div.first {
+    background-color: #2d98a2;
+}
+
+section.main_sec div.container div.second {
+    background-color: #4fc5ba;
+}
+
+section.main_sec div.container div.third {
+    background-color: #eb774c;
+}
+
+section.main_sec div.container div.fourth {
+    background-color: #edbf47;
+}
+
+/* End Main Section Css */
+
+/* Media Q for Main_Sec */
+@media screen and (max-width: 320px) {
+    section.main_sec div.container{
+        margin: 42.5px 0px !important;
+    }
+    section.main_sec div.container div {
+        min-width: 95% !important;
+    }
+}
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 768px) {
+    section.main_sec div.container div{
+        margin: 10px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.main_sec div.container{
+        flex-wrap: wrap;
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+    section.main_sec div.container div{
+        width: calc((100% / 2 ) - 40px) !important;
+        margin: 15px 20px !important;
+    }
+}
+    
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1200px) {}

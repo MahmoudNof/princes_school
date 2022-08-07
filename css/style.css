@@ -101,18 +101,25 @@ header div.container div.row div.col-lg-5>a {
 
 /* Media Q for Header */
 @media screen and (max-width: 320px) {
-    header .container .row .col-lg-5 h1{
+    header .container .row .col-lg-5 h1 {
         font-size: 48px !important;
     }
+
     header .container .row .col-lg-5 p {
         font-size: 22px !important;
     }
 }
+
 @media screen and (max-width:480px) {}
+
 @media screen and (max-width:600px) {}
+
 @media screen and (max-width:768px) {}
+
 @media screen and (max-width:900px) {}
+
 @media screen and (max-width:1024px) {}
+
 @media screen and (max-width:1200px) {}
 
 /* Start Main Section Css */
@@ -169,38 +176,133 @@ section.main_sec div.container div.fourth {
     background-color: #edbf47;
 }
 
-/* End Main Section Css */
-
 /* Media Q for Main_Sec */
 @media screen and (max-width: 320px) {
-    section.main_sec div.container{
+    section.main_sec div.container {
         margin: 42.5px 0px !important;
     }
+
     section.main_sec div.container div {
         min-width: 95% !important;
     }
 }
+
 @media screen and (max-width: 480px) {}
 
 @media screen and (max-width: 600px) {}
 
 @media screen and (max-width: 768px) {
-    section.main_sec div.container div{
+    section.main_sec div.container div {
         margin: 10px !important;
     }
 }
 
 @media screen and (max-width: 900px) {
-    section.main_sec div.container{
+    section.main_sec div.container {
         flex-wrap: wrap;
         margin-top: 85px;
         margin-bottom: 85px;
     }
-    section.main_sec div.container div{
-        width: calc((100% / 2 ) - 40px) !important;
+
+    section.main_sec div.container div {
+        width: calc((100% / 2) - 40px) !important;
         margin: 15px 20px !important;
     }
 }
-    
+
 @media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 1200px) {}
+
+/* End Main Section Css */
+
+/* Start latest News Section Css */
+
+.latest_news {
+    background-color: #fafafa;
+}
+
+.latest_news .container {
+    padding: 40px 0 100px;
+}
+
+.latest_news .container .content_on_top {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.latest_news .container .content_on_top h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #505050;
+    font-weight: 500;
+}
+
+.latest_news .container .content_on_top p {
+    font-size: 14px;
+    line-height: 34px;
+    color: #59c6bc;
+}
+
+.latest_news .container .news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest_news .container .news div {
+    width: calc((100% / 3) - 13px);
+    padding-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.latest_news .container .news div :not(:first-child) {
+    padding: 0px 20px
+}
+
+.latest_news .container .news div img {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 15px;
+}
+
+.latest_news .container .news div caption {
+    font-size: 15px;
+    line-height: 34px;
+    color: #737373;
+}
+
+.latest_news .container .news div h4 {
+    font-size: 21px;
+    line-height: 34px;
+    color: #767676;
+    font-weight: 500;
+}
+
+.latest_news .container .news div p {
+    font-size: 16px;
+    line-height: 27px;
+    color: #999999;
+}
+
+.latest_news .container .news div a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 34px;
+    color: #505050;
+    font-weight: 500;
+    background-color: #fff568;
+    padding: 5px 40px !important;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.latest_news .container .news div svg {
+    padding-left: 0px !important;
+    color: #59c6bc;
+}
+
+
+/* Media Q for latest news latest_news */
+
+/* End latest News Section Css */

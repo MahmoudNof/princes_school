@@ -251,9 +251,12 @@ section.main_sec div.container div.fourth {
 }
 
 .latest_news .container .news div {
-    width: calc((100% / 3) - 13px);
     padding-bottom: 30px;
     background-color: #ffffff;
+}
+
+.row .news .col-lg-4 {
+    width: 32.233333%;
 }
 
 .latest_news .container .news div :not(:first-child) {
@@ -266,7 +269,7 @@ section.main_sec div.container div.fourth {
     margin-bottom: 15px;
 }
 
-.latest_news .container .news div caption {
+.latest_news .container .news div span {
     font-size: 15px;
     line-height: 34px;
     color: #737373;
@@ -305,4 +308,278 @@ section.main_sec div.container div.fourth {
 
 /* Media Q for latest news latest_news */
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .latest_news .container .news {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .row .news .col-lg-4 {
+        width: 100%;
+    }
+
+    .latest_news .container .row .news .latest_news .container .news div img {
+        width: 50%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
 /* End latest News Section Css */
+
+/* Start Section School Gools Css */
+.school_gools {
+    background-image: url(../images/Layer\ 12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 21%;
+}
+
+.school_gools .overlay {
+    background-color: #4fc5b9d0;
+}
+
+.school_gools .overlay .container {
+    /* padding-top: 40px; */
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.school_gools .overlay .container .content_on_top {
+    text-align: center;
+}
+
+.school_gools .overlay .container .content_on_top h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.school_gools .overlay .container .content_on_top p {
+    font-size: 14px;
+    line-height: 34px;
+    color: #ffffff;
+}
+
+.school_gools .overlay .container .row>.col-lg-3 {
+    position: relative;
+}
+
+.school_gools .overlay .container .row>.col-lg-3 span {
+    position: absolute;
+    padding: 0 20px;
+}
+
+.school_gools .overlay .container .row>.col-lg-3 img {
+    width: 81px;
+    height: 71px;
+}
+
+.school_gools .overlay .container .row>.col-lg-3 h4 {
+    font-size: 53px;
+    line-height: 34px;
+    color: #fefefe;
+    font-weight: 400;
+}
+
+/* Media Q for School Gools .school_gools */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* End Section School Gools Css */
+
+
+/* Start parents_saying */
+section.parents_sayings {
+    background-color: #ffffff;
+}
+
+section.parents_sayings .container {
+    padding: 55px 0px;
+}
+
+section.parents_sayings .container .content_on_top {
+    text-align: center;
+}
+
+section.parents_sayings .container .content_on_top h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #505050;
+    font-weight: 500;
+}
+
+section.parents_sayings .container .content_on_top p {
+    font-size: 14px;
+    line-height: 34px;
+    color: #59c6bc;
+}
+
+section.parents_sayings .container .content .first {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(50% - 70px);
+}
+
+section.parents_sayings .container .content .first:first-child,
+section.parents_sayings .container .content .first:nth-child(2) {
+    margin-bottom: 60px;
+}
+
+section.parents_sayings .container .content .first:nth-child(3),
+section.parents_sayings .container .content .first:nth-child(4) {
+    margin-bottom: 25px;
+}
+
+section.parents_sayings .container .content .first:nth-child(1),
+section.parents_sayings .container .content .first:nth-child(3) {
+    margin-left: 70px;
+}
+
+section.parents_sayings .container .content .first img {
+    width: 95px;
+    height: 85px;
+    border-radius: 17px;
+}
+
+section.parents_sayings .container .content .first .name_info_text {
+    background-color: #f9f9f9;
+    margin-right: 20px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 17px;
+}
+
+section.parents_sayings .container .content .first .name_info_text::before {
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent transparent #f9f9f9;
+    position: absolute;
+    right: -20px;
+    top: 10px;
+}
+
+section.parents_sayings .container .content .first .name_info_text h4 {
+    font-size: 15px;
+    line-height: 13px;
+    color: #3e3e3e;
+    font-weight: 700;
+}
+
+section.parents_sayings .container .content .first .name_info_text p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #505050;
+    font-weight: 500;
+}
+
+section.parents_sayings .container .content .first .name_info_text ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section.parents_sayings .container .content .first .name_info_text ul li:not(:first-child) {
+    margin-right: 20px;
+}
+
+section.parents_sayings .container .content .first .name_info_text ul li svg {
+    color: #4fc5ba;
+    padding-left: 5px;
+}
+
+/* Media Q  */
+@media only screen and (max-width: 768px) {
+    section.parents_sayings .container .content .first {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+/* End parents_saying */
+
+/* Start Last Section (last_section) Css */
+.last_section {
+    background-color: #eef6f6;
+}
+
+.last_section .container {
+    padding: 85px 0px;
+}
+
+.last_section .container .row .img_class {
+    background-image: url(../images/class\(4\)\ -\ Copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    height: 335px;
+    border-radius: 14px;
+    width: calc(50% - 20px);
+}
+
+.last_section .container .row .contact_us {
+    padding: 20px 20px 30px 20px;
+    width: calc(25% - 10px);
+    background-color: #fff;
+}
+
+.last_section .container .row .contact_us h3 {
+    font-size: 21px;
+    line-height: 33px;
+    color: #505050;
+    font-weight: 300;
+    text-align: center;
+}
+.last_section .container .row .contact_us ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 75%;
+}
+/* .last_section .container .row .contact_us ul li{
+    display: flex;
+} */
+.last_section .container .row .contact_us ul li svg{
+    color: #4fc5ba;
+}
+.last_section .container .row .contact_us ul li {
+    font-size: 16px;
+    line-height: 22px;
+    color: #505050;
+    font-weight: 300;
+    max-width: max-content;
+}
+/* End Last Section (last_section) Css */

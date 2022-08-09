@@ -536,6 +536,12 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
 
 .last_section .container {
     padding: 85px 0px;
+    overflow: hidden;
+}
+
+.last_section .container .last_section_content :first-child,
+.last_section .container .last_section_content :nth-child(2){
+    margin-left: 20px;
 }
 
 .last_section .container .row .img_class {
@@ -548,20 +554,24 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     width: calc(50% - 20px);
 }
 
-.last_section .container .row .contact_us {
+.last_section .container .row .contact_us,
+.last_section .container .row .working_hours {
     padding: 20px 20px 30px 20px;
     width: calc(25% - 10px);
     background-color: #fff;
+    overflow: hidden;
 }
 
-.last_section .container .row .contact_us h3 {
+.last_section .container .row .contact_us h3,
+.last_section .container .row .working_hours h3 {
     font-size: 21px;
     line-height: 33px;
     color: #505050;
     font-weight: 300;
     text-align: center;
 }
-.last_section .container .row .contact_us ul{
+
+.last_section .container .row .contact_us ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -569,17 +579,94 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     justify-content: space-between;
     height: 75%;
 }
+
 /* .last_section .container .row .contact_us ul li{
     display: flex;
 } */
-.last_section .container .row .contact_us ul li svg{
+.last_section .container .row .contact_us ul li svg {
     color: #4fc5ba;
 }
+
 .last_section .container .row .contact_us ul li {
     font-size: 16px;
     line-height: 22px;
     color: #505050;
     font-weight: 300;
-    max-width: max-content;
+    white-space: nowrap;
+    margin-block-start: auto;
 }
+
+.last_section .container .row .working_hours p {
+    font-size: 14px;
+    line-height: 23px;
+    color: #737373;
+}
+
+.last_section .container .row .working_hours ul {
+    list-style-type: none;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.last_section .container .row .working_hours ul span {
+    background-color: var(--second-color);
+    padding: 9.5px 27px;
+    border-radius: 7px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.last_section .container .row .working_hours ul li{text-align: center;}
+.last_section .container .row .working_hours ul li:nth-child(2) span {
+    padding: 9.5px 46.3px !important;
+}
+
 /* End Last Section (last_section) Css */
+
+/* map Css */
+.map{
+    background-image: url(../images/Layer\ 28-map.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 336px;
+    position: relative;
+}
+.map .overlay{
+    background-color: #18181866;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.map .overlay span{
+    background-color: #797979;
+    margin-right: 15px;
+}
+.map .overlay span svg{
+    color: #fff;
+}
+.map .overlay .feild{
+    width: 33.3%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    position: relative;
+}
+.map .overlay .feild::after{
+    content: "";
+    position: absolute;
+    border: 15px solid;
+    border-color: var(--main-color) transparent transparent transparent;
+    left: 220px;
+    top: 68px;
+
+}

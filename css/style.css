@@ -540,7 +540,7 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
 }
 
 .last_section .container .last_section_content :first-child,
-.last_section .container .last_section_content :nth-child(2){
+.last_section .container .last_section_content :nth-child(2) {
     margin-left: 20px;
 }
 
@@ -611,6 +611,7 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .last_section .container .row .working_hours ul span {
     background-color: var(--second-color);
     padding: 9.5px 27px;
@@ -620,7 +621,10 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     margin-bottom: 5px;
 }
 
-.last_section .container .row .working_hours ul li{text-align: center;}
+.last_section .container .row .working_hours ul li {
+    text-align: center;
+}
+
 .last_section .container .row .working_hours ul li:nth-child(2) span {
     padding: 9.5px 46.3px !important;
 }
@@ -628,14 +632,15 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
 /* End Last Section (last_section) Css */
 
 /* map Css */
-.map{
+.map {
     background-image: url(../images/Layer\ 28-map.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 336px;
     position: relative;
 }
-.map .overlay{
+
+.map .overlay {
     background-color: #18181866;
     position: absolute;
     top: 0;
@@ -643,14 +648,17 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     width: 100%;
     height: 100%;
 }
-.map .overlay span{
+
+.map .overlay span {
     background-color: #797979;
     margin-right: 15px;
 }
-.map .overlay span svg{
+
+.map .overlay span svg {
     color: #fff;
 }
-.map .overlay .feild{
+
+.map .overlay .feild {
     width: 33.3%;
     margin: auto;
     position: relative;
@@ -661,7 +669,8 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     border-radius: 10px;
     position: relative;
 }
-.map .overlay .feild::after{
+
+.map .overlay .feild::after {
     content: "";
     position: absolute;
     border: 15px solid;
@@ -669,4 +678,40 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
     left: 220px;
     top: 68px;
 
+}
+
+
+/* Start section Footer CSs */
+
+section.footer .container footer{
+    text-align: center;
+    width: 100%;
+    padding: 6.8% 0;
+}
+
+section.footer .container footer h3,
+section.footer .container footer p,
+section.footer .container footer ul{
+    margin: 2.3% 0;
+}
+
+section.footer .container footer h3 {
+    font-size: 41px;
+    line-height: 17px;
+    color: #656565;
+    font-weight: bold;
+}
+
+section.footer .container footer p {
+    font-size: 15px;
+    display: inline-block;
+    line-height: 23px;
+    color: #555555;
+    width: 779px;
+}
+section.footer .container footer ul {
+    list-style-type: none;
+    writing-mode: vertical-rl;
+    display: block;
+    margin: auto;
 }

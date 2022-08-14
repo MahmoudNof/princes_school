@@ -32,35 +32,43 @@ header {
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
-    height: 725px;
+    height: 722px;
 }
 
 /* Start Header Nav Css */
-header #cust-nav {
+header nav#cust_nav{
+    height: 12.743%;
     background-color: var(--main-color) !important;
 }
 
 header nav .container #navbarSupportedContent ul li.nav-item>a {
-    color: #fff;
-}
-
-header #cust-nav .container #cust-brand {
-    position: relative;
     color: #ffffff;
-    font-weight: 900;
-    margin-right: 0;
+    font-size: 15px;
+    line-height: 17px;
 }
 
-header #cust-nav .container #cust-brand span {
+header #cust_nav .container #cust_brand {
+    color: #ffffff;
+    font-size: 27px;
+    position: relative;
+}
+
+header #cust_nav .container #cust_brand span {
     position: absolute;
-    top: 36px;
-    left: 43px;
+    top: 55%;
+    right: 14.4%;
     color: #000;
-    font-weight: 300 !important;
+    font-size: 21px;
 }
 
+/* 
 header #cust-nav .container #cust-brand img {
     margin-left: 6px;
+}
+
+header nav .container #navbarSupportedContent ul li a{
+    font-size: 15px;
+    line-height: 17px;
 }
 
 header nav .container #navbarSupportedContent ul li a.nav-link.active {
@@ -69,7 +77,8 @@ header nav .container #navbarSupportedContent ul li a.nav-link.active {
     padding-right: 30px !important;
     padding-left: 30px !important;
     color: #000;
-}
+} 
+*/
 
 /* End Header Nav Css */
 header div.container div.row div.col-lg-5 h1 {
@@ -123,6 +132,9 @@ header div.container div.row div.col-lg-5>a {
 @media screen and (max-width:1200px) {}
 
 /* Start Main Section Css */
+section#our_activities.main_sec{
+    padding: 1.899% 0;
+}
 section.main_sec>div.container {
     display: flex;
     justify-content: center;
@@ -223,7 +235,7 @@ section.main_sec div.container div.fourth {
 }
 
 .latest_news .container {
-    padding: 40px 0 100px;
+    padding: 1.756% 0 9.864%;
 }
 
 .latest_news .container .content_on_top {
@@ -356,7 +368,7 @@ section.main_sec div.container div.fourth {
     height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: stretch;
 }
 
@@ -535,7 +547,7 @@ section.parents_sayings .container .content .first .name_info_text ul li svg {
 }
 
 .last_section .container {
-    padding: 85px 0px;
+    padding: 6.709% 0px;
     overflow: hidden;
 }
 
@@ -707,7 +719,7 @@ section.footer .container footer p {
     display: inline-block;
     line-height: 23px;
     color: #555555;
-    width: 779px;
+    width: 69.8028%;
 }
 section.footer .container footer ul {
     list-style-type: none;

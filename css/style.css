@@ -718,6 +718,6 @@ section.footer .container footer ul {
     margin: auto;
 }
 
-section.footer .container footer ul li:hover{
+section.footer .container footer ul li svg:hover{
     color: var(--main-color);
 }
